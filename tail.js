@@ -1,3 +1,10 @@
+var test = 12;
+if (true) {
+  test + 2;
+  test = 4;
+}
+console.log(test);
+
 import { assertEqual } from "./assertEqual.js";
 
 const tail = function (array) {

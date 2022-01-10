@@ -2,5 +2,8 @@
   "dependencies": {
     "lodash": "^4.17.21"
   },
-  "type":"module"
+  "type":"module",
+  "parserOptions": {
+    "sourceType":"module"
+  }
 }
