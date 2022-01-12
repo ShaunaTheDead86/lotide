@@ -15,9 +15,9 @@ const eqObjects = function (object1, object2) {
 
   for (const key of object1Keys) {
     if (Array.isArray(object1[key]) && Array.isArray([key])) {
-      if (!eqArrays(object1[key],object2[key])) return false
+      if (!eqArrays(object1[key], object2[key])) return false
     } else {
-      if (!assertEqual(object1[key],object2[key])) return false
+      if (!assertEqual(object1[key], object2[key])) return false
     }
 
     if (!hasSameKey(object2, key)) return false
@@ -39,3 +39,5 @@ console.log(eqObjects(cd, dc)) // => true
 
 const cd2 = { c: '1', d: ['2', 3, 4] }
 console.log(eqObjects(cd, cd2)) // => false
+
+export { eqObjects }
