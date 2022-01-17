@@ -1,22 +1,19 @@
-import { eqObjects } from './eqObjects.js'
-import { inspect } from 'util'
+const eqObjects = require('./eqObjects');
+const inspect = require('util').inspect;
 
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
 
   if (!eqObjects(actual, expected)) {
     console.log(
       `⛔⛔⛔ Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`
-    )
-    return false
+    );
+    return false;
   }
 
   console.log(
     `✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`
-  )
-  return true
-}
+  );
+  return true;
+};
 
-const obj1 = {test:"test"}
-const obj2 = {test:"test"}
-
-console.log(assertObjectsEqual(obj1, obj2))
+module.exports = assertObjectsEqual;

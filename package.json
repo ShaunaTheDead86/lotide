@@ -2,8 +2,20 @@
   "dependencies": {
     "lodash": "^4.17.21"
   },
-  "type":"module",
   "parserOptions": {
-    "sourceType":"module"
+    "sourceType": "module"
+  },
+  "name": "@shauna-empringham/lotide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Shauna Empringham",
+  "license": "ISC",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.4"
   }
 }
